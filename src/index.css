@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --font-dmSans: "DM Sans", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+}
+
 .bg-img {
   background-color: black;
   background-image: url("assets/images/fundo.jpeg");
@@ -19,19 +24,26 @@
 }
 
 .title {
+  font-family: var(--font-oswald);
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.card-texto p {
+  font-family: var(--font-dmSans);
 }
 
 .em {
   display: block;
   margin-top: 1em;
-  color: #555;
+  color: #5f5f5f;
+  font-weight: 500;
   font-style: italic;
 }
 
-@media screen and (min-width:768px) {
-  .bg-img { 
+@media screen and (min-width: 768px) {
+  .bg-img {
+    background-color: white;
     background-image: none;
   }
   .card-texto {
